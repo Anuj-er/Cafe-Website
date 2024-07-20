@@ -1,0 +1,338 @@
+body{
+    background-image: url(contents/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    }
+
+.login-button{
+    background-color: #ffad05;
+    color: white; 
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.login-button:hover{
+    background-color: #ff8c00;
+}
+
+.cart-button{
+    margin-left: 10px;
+    background-color: #ffad05;
+    color: white; 
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+.cart-button:hover{
+    background-color: #ff8c00;
+}
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffad05;
+    transition: 0.3s color;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.2rem;
+
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: 0.3s color;
+    position: relative;
+}
+.nav-link:hover , .nav-link:active{
+    color: #ffad05;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom:0;
+        left: 50%;
+        transform : translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #ffad05;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:active{
+        color: #ffad05;
+    }
+    .nav-link:hover::before, .nav-link:active{
+        width: 100%;
+        visibility: visible;
+    } 
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url(contents/images/StockCake-Eco-friendly\ Cafe\ Front_1721475584.jpg); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-section .text-white {
+    color: #fff !important;
+  }
+
+.h2-story{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+}
+.p-story{
+    font-size:medium;
+    max-width: 400px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffad05;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+.book-table {
+    overflow:hidden;
+    
+}
+.h2-gallery{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+}
+#gallery {
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.book-table-img {
+    height: 70vh;
+    min-height: 400px;
+    max-height: 450px;
+    border-radius: 50px;
+
+}
+
+.back-img {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Testimonials Section */
+
+.h2-review{
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fafafa;
+    margin-bottom: 20px;
+    
+
+}
+.sec-wp{
+    background-image: url(contents/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+}
+.testimonials-img {
+    position: relative;
+}
+
+.testimonials-img img {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    width: calc(100% + 5vw);
+    max-width: initial;
+}
+
+.testimonials-box {
+    display: flow-root;
+    position: relative;
+    padding: 30px;
+    padding-top: 0;
+    border-radius: 30px;
+    margin: 50px 0 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+.testimonials-box:hover {
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.testimonial-box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.testimonials-box-img {
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.testimonials-box-text .h3-title {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.testimonials-box-text p {
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
