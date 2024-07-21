@@ -438,72 +438,60 @@ body{
     background-color: #ff8c00;
 }
 
+/* Scroll Bar Design */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #bfbfbf;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff8243;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #f16620;
+}
+
+
 /* Menu Page */
+.menu-section {
+    padding: 60px 0;
+    background-color: #dcdcdc;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-
-.repeat-img {
-    background-size: contain;
-    background-repeat: repeat;
-}
-
-.menu-tab-wp {
-    margin-bottom: 80px;
-}
-
-.menu-tab ul {
-    padding: 10px;
+  }
+  .menu-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    position: relative;
     display: inline-block;
-    border-radius: 60px;
-    background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
-    position: relative;
-    z-index: 2;
-}
+    font-weight: 600;
+  }
+  .menu-section h2 i {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: #00000000;
+  }
+  .card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
 
-.menu-tab ul li, .menu-tab ul .filter-active {
-    display: inline-flex;
-    text-transform: capitalize;
-    font-size: 18px;
-    line-height: normal;
-    cursor: pointer;
-    padding: 10px 26px;
-    border-radius: 30px;
-    transition: 0.3s;
-    justify-content: center;
-    align-items: center;
-}
 
-.filter-active {
-    position: absolute;
-    left: 0;
-    top: 12px;
-    min-height: 50px;
-    z-index: -1;
-}
 
-.menu-tab ul li img {
-    margin-right: 10px;
-    position: relative;
-    top: 1px;
-}
-
-.menu-tab ul .filter-active {
-    color: #ffffff;
-    background: linear-gradient(145deg, #e3a92b, #ffc933);
-}
-
-.menu-list-row .bydefault_show .dish-box-wp {
-    display: inline-block !important;
-}
-
-.dish-box-wp {
+  .dish-box-wp {
     display: none;
 }
 
 .dish-box {
     border-radius: 30px;
     background: linear-gradient(145deg, #ececec, #ffffff);
-    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
     display: flow-root;
     padding: 0 30px 40px;
     padding-top: 0;
@@ -521,9 +509,10 @@ body{
 }
 
 .dist-img img {
-    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+
     border-radius: 50%;
     overflow: hidden;
+
 }
 
 .dish-rating {
@@ -625,33 +614,78 @@ body{
 }
 
 
-/* Scroll Bar Design */
-::-webkit-scrollbar {
-    width: 5px;
+.repeat-img {
+    background-size: contain;
+    background-repeat: repeat;
 }
 
-::-webkit-scrollbar-track {
-    background-color: #bfbfbf;
+.menu-tab-wp {
+    margin-bottom: 80px;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #ff8243;
-    border-radius: 10px;
+.menu-tab ul {
+    padding: 10px;
+    display: inline-block;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    position: relative;
+    z-index: 2;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: #f16620;
+.menu-tab ul li, .menu-tab ul .filter-active {
+    display: inline-flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+    padding: 10px 26px;
+    border-radius: 30px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
 }
 
+.filter-active {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    min-height: 50px;
+    z-index: -1;
+}
 
+.menu-tab ul li img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
 
+.menu-tab ul .filter-active {
+    color: #ffffff;
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+}
 
+.menu-list-row .bydefault_show .dish-box-wp {
+    display: inline-block !important;
+}
 
+.dish-box-wp {
+    display: none;
+}
 
-
-
-
-
-
-
-
+.dish-box {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    display: flow-root;
+    padding: 0 30px 40px;
+    padding-top: 0;
+    margin: 130px 0 30px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+.h2-title4{
+    font-size: 46px;
+    color: #0d0d25;
+    line-height: 56px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
