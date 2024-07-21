@@ -8,9 +8,10 @@ body{
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     overflow-x: hidden;
+    
 }
 
-
+/* NAVBAR */
 .navbar{
     background-color: #ffffff;
     padding: 0.5rem 1rem;
